@@ -1,0 +1,19 @@
+{'dataset': 'math-500',
+ 'max_len': 2048,
+ 'model': '/data/scir/yixuanwang/models/mistral-7b-v0.1',
+ 'num_gpus': 8,
+ 'output_path': './preds_math-500////mistral-7b-v0.1',
+ 'temperature': 0.0,
+ 'top_p': 1}
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction:
+Convert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\theta),$ where $r > 0$ and $0 \le \theta < 2 \pi.$
+Please reason step by step, and put your final answer within \boxed{}.
+
+### Response:
+INFO 02-12 09:05:40 config.py:510] This model supports multiple tasks: {'score', 'generate', 'reward', 'embed', 'classify'}. Defaulting to 'generate'.
+INFO 02-12 09:05:40 config.py:1310] Defaulting to use mp for distributed inference
+INFO 02-12 09:05:40 llm_engine.py:234] Initializing an LLM engine (v0.6.6.post1) with config: model='/data/scir/yixuanwang/models/mistral-7b-v0.1', speculative_config=None, tokenizer='/data/scir/yixuanwang/models/mistral-7b-v0.1', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=8, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/data/scir/yixuanwang/models/mistral-7b-v0.1, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"candidate_compile_sizes":[],"compile_sizes":[],"capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+WARNING 02-12 09:05:40 multiproc_worker_utils.py:312] Reducing Torch parallelism from 64 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+INFO 02-12 09:05:40 custom_cache_manager.py:17] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager

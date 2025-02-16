@@ -1,0 +1,27 @@
+{'dataset': 'gsm8k',
+ 'max_len': 2048,
+ 'model': '../tag_reduce/models/llama3/tag_evol_tag1_pool_21_20mul3up_alltags_newprompt_7btags/checkpoint-87/',
+ 'num_gpus': 8,
+ 'output_path': './preds_gsm8k/llama3/tag_reduce/tag_evol_tag1_pool_21_20mul3up_alltags_newprompt_7btags/checkpoint-87',
+ 'temperature': 0.0,
+ 'top_p': 1}
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction:
+Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?
+
+### Response:
+INFO 02-09 07:29:17 config.py:510] This model supports multiple tasks: {'embed', 'classify', 'reward', 'generate', 'score'}. Defaulting to 'generate'.
+INFO 02-09 07:29:17 llm_engine.py:234] Initializing an LLM engine (v0.6.6.post1) with config: model='../tag_reduce/models/llama3/tag_evol_tag1_pool_21_20mul3up_alltags_newprompt_7btags/checkpoint-87/', speculative_config=None, tokenizer='../tag_reduce/models/llama3/tag_evol_tag1_pool_21_20mul3up_alltags_newprompt_7btags/checkpoint-87/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=../tag_reduce/models/llama3/tag_evol_tag1_pool_21_20mul3up_alltags_newprompt_7btags/checkpoint-87/, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"candidate_compile_sizes":[],"compile_sizes":[],"capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 02-09 07:29:18 selector.py:120] Using Flash Attention backend.
+INFO 02-09 07:29:22 model_runner.py:1094] Starting to load model ../tag_reduce/models/llama3/tag_evol_tag1_pool_21_20mul3up_alltags_newprompt_7btags/checkpoint-87/...
+INFO 02-09 07:29:24 model_runner.py:1099] Loading model weights took 14.9595 GB
+INFO 02-09 07:29:25 worker.py:241] Memory profiling takes 0.83 seconds
+INFO 02-09 07:29:25 worker.py:241] the current vLLM instance can use total_gpu_memory (79.10GiB) x gpu_memory_utilization (0.90) = 71.19GiB
+INFO 02-09 07:29:25 worker.py:241] model weights take 14.96GiB; non_torch_memory takes 0.17GiB; PyTorch activation peak memory takes 1.26GiB; the rest of the memory reserved for KV Cache is 54.80GiB.
+INFO 02-09 07:29:25 gpu_executor.py:76] # GPU blocks: 28057, # CPU blocks: 2048
+INFO 02-09 07:29:25 gpu_executor.py:80] Maximum concurrency for 8192 tokens per request: 54.80x
+INFO 02-09 07:29:27 model_runner.py:1415] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 02-09 07:29:35 model_runner.py:1535] Graph capturing finished in 8 secs, took 0.32 GiB
+INFO 02-09 07:29:35 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 10.38 seconds
+Score: 0.6702047005307051
