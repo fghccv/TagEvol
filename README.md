@@ -2,7 +2,7 @@
 Implementation of ACL 2025 Finding paper [Tag-Evol: Achieving Efficient Instruction Evolving via Tag Injection](https://arxiv.org/html/2505.24165v1).
 
 <div align="center">
-<img src="./pic/intro.jpg" width="80%"/>
+<img src="./pic/intro.jpg" width="30%"/>
 </div>
 
 ## A minimal implementation of Tag-Evol
