@@ -11,7 +11,7 @@ Implementation of ACL 2025 Finding paper [Tag-Evol: Achieving Efficient Instruct
 <img src="./pic/tagevol.jpg" width="80%"/>
 </div>
 
-# Run the following code to perform TagEvol data evolution.
+## Run the following code to perform TagEvol data evolution.
 
 ```bash
 task_type="code" # code, common, math-all
