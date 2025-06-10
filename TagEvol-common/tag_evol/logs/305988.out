@@ -1,0 +1,16 @@
+instruct generation
+tag_evol_tag3_7b_yxprompt
+INFO 03-29 14:47:42 __init__.py:207] Automatically detected platform cuda.
+WARNING 03-29 14:47:42 config.py:2448] Casting torch.bfloat16 to torch.float16.
+INFO 03-29 14:47:50 config.py:549] This model supports multiple tasks: {'score', 'reward', 'classify', 'embed', 'generate'}. Defaulting to 'generate'.
+INFO 03-29 14:47:50 config.py:1382] Defaulting to use mp for distributed inference
+tag_evol_tag5_7b_yxprompt
+INFO 03-29 14:47:56 __init__.py:207] Automatically detected platform cuda.
+WARNING 03-29 14:47:57 config.py:2448] Casting torch.bfloat16 to torch.float16.
+INFO 03-29 14:48:04 config.py:549] This model supports multiple tasks: {'score', 'classify', 'reward', 'generate', 'embed'}. Defaulting to 'generate'.
+INFO 03-29 14:48:04 config.py:1382] Defaulting to use mp for distributed inference
+tag_evol_tag7_7b_yxprompt
+INFO 03-29 14:48:10 __init__.py:207] Automatically detected platform cuda.
+WARNING 03-29 14:48:11 config.py:2448] Casting torch.bfloat16 to torch.float16.
+INFO 03-29 14:48:18 config.py:549] This model supports multiple tasks: {'reward', 'classify', 'generate', 'embed', 'score'}. Defaulting to 'generate'.
+INFO 03-29 14:48:18 config.py:1382] Defaulting to use mp for distributed inference

@@ -1,0 +1,94 @@
+INFO:__main__:Initializing LLM engine...
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:04<00:13,  4.39s/it]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:11<00:12,  6.06s/it]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:13<00:04,  4.06s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:19<00:00,  4.82s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:19<00:00,  4.82s/it]
+
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s]Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:01<00:34,  1.02s/it]Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:01<00:28,  1.18it/s]Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:02<00:25,  1.26it/s]Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:03<00:23,  1.31it/s]Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:03<00:22,  1.33it/s]Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:04<00:21,  1.36it/s]Capturing CUDA graph shapes:  20%|██        | 7/35 [00:05<00:20,  1.38it/s]Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:06<00:19,  1.39it/s]Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:06<00:18,  1.39it/s]Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:07<00:17,  1.41it/s]Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:08<00:16,  1.43it/s]Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:08<00:16,  1.44it/s]Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:09<00:15,  1.46it/s]Capturing CUDA graph shapes:  40%|████      | 14/35 [00:10<00:14,  1.48it/s]Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:10<00:13,  1.50it/s]Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:11<00:12,  1.51it/s]Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:12<00:11,  1.53it/s]Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:12<00:11,  1.54it/s]Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:13<00:10,  1.56it/s]Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:13<00:09,  1.59it/s]Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:14<00:08,  1.60it/s]Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:15<00:08,  1.62it/s]Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:15<00:07,  1.64it/s]Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:16<00:07,  1.57it/s]Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:16<00:06,  1.63it/s]Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:17<00:05,  1.64it/s]/home/sqshou/anaconda3/envs/thm/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+/var/spool/slurmd/job305990/slurm_script: line 25: 2895747 Killed                  python3 tag_evol_multitag_20mul3up_all_tags.py --model_name_or_path /home/share/models/Qwen2.5-7B-Instruct --source_file ./datas/${data_name}/${data_name}.json --target_file ./datas/${target_data_name}/${target_data_name}.json --temperature 0.7 --max_tokens 2048 --tp 4 --tag_file ./datas/${tag_name}/${tag_name}.json --num_tag ${num_tag} --num_pool ${num_pool}
+INFO:__main__:Initializing LLM engine...
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:02<00:06,  2.26s/it]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:05<00:05,  2.69s/it]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:06<00:02,  2.13s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:09<00:00,  2.42s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:09<00:00,  2.40s/it]
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 240, in <module>
+[rank0]:     main(args.model_name_or_path, args.source_file, args.target_file, args.temperature, args.max_tokens, args.debug, args.tp, args.num_pool, args.tag_file, args.num_tag)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 192, in main
+[rank0]:     engine = TagReduce(model_name_or_path, tensor_parallel_size=tp)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 30, in __init__
+[rank0]:     self.llm_engine = self.create_llm_engine(model_name_or_path)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 34, in create_llm_engine
+[rank0]:     return LLM(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 1022, in inner
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+[rank0]:     self.llm_engine = self.engine_class.from_engine_args(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 489, in from_engine_args
+[rank0]:     engine = cls(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 273, in __init__
+[rank0]:     self.model_executor = executor_class(vllm_config=vllm_config, )
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 271, in __init__
+[rank0]:     super().__init__(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 52, in __init__
+[rank0]:     self._init_executor()
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 125, in _init_executor
+[rank0]:     self._run_workers("load_model",
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 190, in _run_workers
+[rank0]:     ] + [output.get() for output in worker_outputs]
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 190, in <listcomp>
+[rank0]:     ] + [output.get() for output in worker_outputs]
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 62, in get
+[rank0]:     raise self.result.exception
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 66.00 MiB. GPU 1 has a total capacity of 31.74 GiB of which 43.12 MiB is free. Process 2895847 has 28.00 GiB memory in use. Including non-PyTorch memory, this process has 3.68 GiB memory in use. Of the allocated memory 2.99 GiB is allocated by PyTorch, and 237.42 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]:[W329 14:51:14.359867026 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+/home/sqshou/anaconda3/envs/thm/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+INFO:__main__:Initializing LLM engine...
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:01<00:05,  1.70s/it]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:03<00:03,  1.63s/it]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:04<00:01,  1.54s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:06<00:00,  1.55s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:06<00:00,  1.57s/it]
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 240, in <module>
+[rank0]:     main(args.model_name_or_path, args.source_file, args.target_file, args.temperature, args.max_tokens, args.debug, args.tp, args.num_pool, args.tag_file, args.num_tag)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 192, in main
+[rank0]:     engine = TagReduce(model_name_or_path, tensor_parallel_size=tp)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 30, in __init__
+[rank0]:     self.llm_engine = self.create_llm_engine(model_name_or_path)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 34, in create_llm_engine
+[rank0]:     return LLM(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 1022, in inner
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+[rank0]:     self.llm_engine = self.engine_class.from_engine_args(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 489, in from_engine_args
+[rank0]:     engine = cls(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 273, in __init__
+[rank0]:     self.model_executor = executor_class(vllm_config=vllm_config, )
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 271, in __init__
+[rank0]:     super().__init__(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 52, in __init__
+[rank0]:     self._init_executor()
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 125, in _init_executor
+[rank0]:     self._run_workers("load_model",
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 190, in _run_workers
+[rank0]:     ] + [output.get() for output in worker_outputs]
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 190, in <listcomp>
+[rank0]:     ] + [output.get() for output in worker_outputs]
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 62, in get
+[rank0]:     raise self.result.exception
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 66.00 MiB. GPU 1 has a total capacity of 31.74 GiB of which 43.12 MiB is free. Process 2895847 has 28.00 GiB memory in use. Including non-PyTorch memory, this process has 3.68 GiB memory in use. Of the allocated memory 2.99 GiB is allocated by PyTorch, and 237.42 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]:[W329 14:51:40.355154447 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+/home/sqshou/anaconda3/envs/thm/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+slurmstepd-gpu14: error: Detected 1 oom_kill event in StepId=305990.batch. Some of the step tasks have been OOM Killed.

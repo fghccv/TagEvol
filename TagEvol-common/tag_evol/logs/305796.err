@@ -1,0 +1,69 @@
+INFO:__main__:Initializing LLM engine...
+Traceback (most recent call last):
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 241, in <module>
+    main(args.model_name_or_path, args.source_file, args.target_file, args.temperature, args.max_tokens, args.debug, args.tp, args.num_pool, args.tag_file, args.num_tag)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 193, in main
+    engine = TagReduce(model_name_or_path, tensor_parallel_size=tp)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 30, in __init__
+    self.llm_engine = self.create_llm_engine(model_name_or_path)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 34, in create_llm_engine
+    return LLM(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 1022, in inner
+    return fn(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+    self.llm_engine = self.engine_class.from_engine_args(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 486, in from_engine_args
+    engine_config = engine_args.create_engine_config(usage_context)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/arg_utils.py", line 1136, in create_engine_config
+    cache_config = CacheConfig(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/config.py", line 1069, in __init__
+    self._verify_args()
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/config.py", line 1088, in _verify_args
+    raise ValueError(
+ValueError: GPU memory utilization must be less than 1.0. Got 80.
+INFO:__main__:Initializing LLM engine...
+Traceback (most recent call last):
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 241, in <module>
+    main(args.model_name_or_path, args.source_file, args.target_file, args.temperature, args.max_tokens, args.debug, args.tp, args.num_pool, args.tag_file, args.num_tag)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 193, in main
+    engine = TagReduce(model_name_or_path, tensor_parallel_size=tp)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 30, in __init__
+    self.llm_engine = self.create_llm_engine(model_name_or_path)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 34, in create_llm_engine
+    return LLM(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 1022, in inner
+    return fn(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+    self.llm_engine = self.engine_class.from_engine_args(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 486, in from_engine_args
+    engine_config = engine_args.create_engine_config(usage_context)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/arg_utils.py", line 1136, in create_engine_config
+    cache_config = CacheConfig(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/config.py", line 1069, in __init__
+    self._verify_args()
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/config.py", line 1088, in _verify_args
+    raise ValueError(
+ValueError: GPU memory utilization must be less than 1.0. Got 80.
+INFO:__main__:Initializing LLM engine...
+Traceback (most recent call last):
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 241, in <module>
+    main(args.model_name_or_path, args.source_file, args.target_file, args.temperature, args.max_tokens, args.debug, args.tp, args.num_pool, args.tag_file, args.num_tag)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 193, in main
+    engine = TagReduce(model_name_or_path, tensor_parallel_size=tp)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 30, in __init__
+    self.llm_engine = self.create_llm_engine(model_name_or_path)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 34, in create_llm_engine
+    return LLM(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 1022, in inner
+    return fn(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+    self.llm_engine = self.engine_class.from_engine_args(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 486, in from_engine_args
+    engine_config = engine_args.create_engine_config(usage_context)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/arg_utils.py", line 1136, in create_engine_config
+    cache_config = CacheConfig(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/config.py", line 1069, in __init__
+    self._verify_args()
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/config.py", line 1088, in _verify_args
+    raise ValueError(
+ValueError: GPU memory utilization must be less than 1.0. Got 80.

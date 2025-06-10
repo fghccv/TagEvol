@@ -1,10 +1,10 @@
 #!/bin/bash
 
 data_name=$1
-
+model_path=""
 
 deepspeed --master_port 25125 ../train_response.py \
-  --model_name_or_path /data/scir/yixuanwang/models/mistral-7b-v0.1 \
+  --model_name_or_path $model_path \
   --data_path ./datas/${data_name}.json \
   --output_dir ./models/mistral/${data_name} \
   --full_determinism True\

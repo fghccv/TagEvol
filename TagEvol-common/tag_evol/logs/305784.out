@@ -1,0 +1,4 @@
+instruct generation
+tag_evol_tag3_7b_yxprompt
+INFO 03-29 05:34:37 __init__.py:207] Automatically detected platform cuda.
+ERROR 03-29 05:36:48 config.py:102] Error retrieving file list: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/models/Qwen2.5-72B-Instruct/tree/main?recursive=True&expand=False (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd7ca0084c0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 149e2b27-5472-499b-bb75-754b4568b20b)'), retrying 1 of 2

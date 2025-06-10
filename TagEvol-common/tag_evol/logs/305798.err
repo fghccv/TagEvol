@@ -1,0 +1,110 @@
+INFO:__main__:Initializing LLM engine...
+Loading safetensors checkpoint shards:   0% Completed | 0/37 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:   3% Completed | 1/37 [00:05<03:08,  5.23s/it]
+Loading safetensors checkpoint shards:   5% Completed | 2/37 [00:12<03:51,  6.62s/it]
+Loading safetensors checkpoint shards:   8% Completed | 3/37 [00:19<03:40,  6.49s/it]
+Loading safetensors checkpoint shards:  11% Completed | 4/37 [00:24<03:17,  5.97s/it]
+Loading safetensors checkpoint shards:  14% Completed | 5/37 [00:29<03:03,  5.74s/it]
+Loading safetensors checkpoint shards:  16% Completed | 6/37 [00:35<02:54,  5.62s/it]
+Loading safetensors checkpoint shards:  19% Completed | 7/37 [00:40<02:44,  5.49s/it]
+Loading safetensors checkpoint shards:  22% Completed | 8/37 [00:45<02:35,  5.35s/it]
+Loading safetensors checkpoint shards:  24% Completed | 9/37 [00:50<02:29,  5.36s/it]
+Loading safetensors checkpoint shards:  27% Completed | 10/37 [00:56<02:25,  5.38s/it]
+Loading safetensors checkpoint shards:  30% Completed | 11/37 [01:01<02:18,  5.33s/it]
+Loading safetensors checkpoint shards:  32% Completed | 12/37 [01:06<02:10,  5.21s/it]
+Loading safetensors checkpoint shards:  35% Completed | 13/37 [01:11<02:02,  5.10s/it]
+Loading safetensors checkpoint shards:  38% Completed | 14/37 [01:16<01:56,  5.08s/it]
+Loading safetensors checkpoint shards:  41% Completed | 15/37 [01:21<01:50,  5.02s/it]
+Loading safetensors checkpoint shards:  43% Completed | 16/37 [01:25<01:44,  4.95s/it]
+Loading safetensors checkpoint shards:  46% Completed | 17/37 [01:30<01:38,  4.92s/it]
+Loading safetensors checkpoint shards:  49% Completed | 18/37 [01:35<01:33,  4.91s/it]
+Loading safetensors checkpoint shards:  51% Completed | 19/37 [01:40<01:27,  4.88s/it]
+Loading safetensors checkpoint shards:  54% Completed | 20/37 [01:45<01:22,  4.87s/it]
+Loading safetensors checkpoint shards:  57% Completed | 21/37 [01:49<01:13,  4.61s/it]
+Loading safetensors checkpoint shards:  59% Completed | 22/37 [01:54<01:10,  4.71s/it]
+Loading safetensors checkpoint shards:  62% Completed | 23/37 [01:58<01:02,  4.47s/it]
+Loading safetensors checkpoint shards:  65% Completed | 24/37 [01:59<00:46,  3.56s/it]
+Loading safetensors checkpoint shards:  68% Completed | 25/37 [02:01<00:35,  2.94s/it]
+Loading safetensors checkpoint shards:  70% Completed | 26/37 [02:02<00:27,  2.50s/it]
+Loading safetensors checkpoint shards:  73% Completed | 27/37 [02:04<00:24,  2.42s/it]
+Loading safetensors checkpoint shards:  76% Completed | 28/37 [02:12<00:36,  4.10s/it]
+Loading safetensors checkpoint shards:  78% Completed | 29/37 [02:22<00:47,  5.93s/it]
+Loading safetensors checkpoint shards:  81% Completed | 30/37 [02:32<00:49,  7.06s/it]
+Loading safetensors checkpoint shards:  84% Completed | 31/37 [02:41<00:46,  7.67s/it]
+Loading safetensors checkpoint shards:  86% Completed | 32/37 [02:51<00:40,  8.16s/it]
+Loading safetensors checkpoint shards:  89% Completed | 33/37 [03:00<00:34,  8.67s/it]
+Loading safetensors checkpoint shards:  92% Completed | 34/37 [03:10<00:27,  9.05s/it]
+Loading safetensors checkpoint shards:  95% Completed | 35/37 [03:19<00:17,  8.93s/it]
+Loading safetensors checkpoint shards:  97% Completed | 36/37 [03:29<00:09,  9.16s/it]
+Loading safetensors checkpoint shards: 100% Completed | 37/37 [03:37<00:00,  8.81s/it]
+Loading safetensors checkpoint shards: 100% Completed | 37/37 [03:37<00:00,  5.87s/it]
+
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s]Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:01<00:57,  1.69s/it]Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:02<00:32,  1.01it/s]Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:02<00:24,  1.29it/s]Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:03<00:20,  1.49it/s]Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:03<00:18,  1.64it/s]Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:04<00:16,  1.74it/s]Capturing CUDA graph shapes:  20%|██        | 7/35 [00:04<00:15,  1.81it/s]Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:05<00:14,  1.87it/s]Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:05<00:14,  1.74it/s]Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:06<00:14,  1.70it/s]Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:07<00:13,  1.78it/s]Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:07<00:12,  1.84it/s]Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:08<00:11,  1.88it/s]Capturing CUDA graph shapes:  40%|████      | 14/35 [00:08<00:10,  1.92it/s]Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:09<00:10,  1.94it/s]Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:09<00:09,  1.96it/s]Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:10<00:09,  1.97it/s]Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:10<00:08,  1.99it/s]Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:10<00:07,  2.00it/s]Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:11<00:07,  2.01it/s]Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:11<00:06,  2.02it/s]Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:12<00:06,  2.03it/s]Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:12<00:05,  2.03it/s]Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:13<00:05,  2.02it/s]Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:14<00:05,  1.85it/s]Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:14<00:05,  1.76it/s]Capturing CUDA graph shapes:  77%|███████▋  | 27/35 [00:15<00:04,  1.84it/s]Capturing CUDA graph shapes:  80%|████████  | 28/35 [00:15<00:03,  1.90it/s]Capturing CUDA graph shapes:  83%|████████▎ | 29/35 [00:16<00:03,  1.93it/s]Capturing CUDA graph shapes:  86%|████████▌ | 30/35 [00:16<00:02,  1.97it/s]Capturing CUDA graph shapes:  89%|████████▊ | 31/35 [00:17<00:02,  1.86it/s]Capturing CUDA graph shapes:  91%|█████████▏| 32/35 [00:17<00:01,  1.92it/s]Capturing CUDA graph shapes:  94%|█████████▍| 33/35 [00:18<00:01,  1.97it/s]Capturing CUDA graph shapes:  97%|█████████▋| 34/35 [00:18<00:00,  1.96it/s]Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:19<00:00,  1.52it/s]Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:19<00:00,  1.77it/s]
+Processed prompts:   0%|          | 0/15011 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s][rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 241, in <module>
+[rank0]:     main(args.model_name_or_path, args.source_file, args.target_file, args.temperature, args.max_tokens, args.debug, args.tp, args.num_pool, args.tag_file, args.num_tag)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 200, in main
+[rank0]:     data_points = engine.generate_tags(ori_datas, temperature, max_tokens)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 55, in generate_tags
+[rank0]:     tag_outputs = self.llm_engine.generate(tag_inputs, sampling_params)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 1057, in inner
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 469, in generate
+[rank0]:     outputs = self._run_engine(use_tqdm=use_tqdm)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 1397, in _run_engine
+[rank0]:     step_outputs = self.llm_engine.step()
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 1391, in step
+[rank0]:     outputs = self.model_executor.execute_model(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 284, in execute_model
+[rank0]:     driver_outputs = self._driver_execute_model(execute_model_req)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 144, in _driver_execute_model
+[rank0]:     return self.driver_worker.execute_model(execute_model_req)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 420, in execute_model
+[rank0]:     output = self.model_runner.execute_model(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 1724, in execute_model
+[rank0]:     hidden_or_intermediate_states = model_executable(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/model_executor/models/qwen2.py", line 486, in forward
+[rank0]:     hidden_states = self.model(input_ids, positions, kv_caches,
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/compilation/decorators.py", line 172, in __call__
+[rank0]:     return self.forward(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/model_executor/models/qwen2.py", line 348, in forward
+[rank0]:     hidden_states, residual = layer(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/model_executor/models/qwen2.py", line 257, in forward
+[rank0]:     hidden_states = self.mlp(hidden_states)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/model_executor/models/qwen2.py", line 97, in forward
+[rank0]:     x, _ = self.down_proj(x)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/model_executor/layers/linear.py", line 1149, in forward
+[rank0]:     output_parallel = self.quant_method.apply(self,
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/model_executor/layers/linear.py", line 142, in apply
+[rank0]:     return F.linear(x, layer.weight, bias)
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 506.00 MiB. GPU 0 has a total capacity of 79.20 GiB of which 442.62 MiB is free. Including non-PyTorch memory, this process has 78.75 GiB memory in use. Of the allocated memory 77.29 GiB is allocated by PyTorch, with 66.00 MiB allocated in private pools (e.g., CUDA Graphs), and 93.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Processed prompts:   0%|          | 0/15011 [00:02<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]
+[rank0]:[W329 06:00:51.339571017 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+/home/sqshou/anaconda3/envs/thm/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+INFO:__main__:Initializing LLM engine...
+Loading safetensors checkpoint shards:   0% Completed | 0/37 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:   3% Completed | 1/37 [00:04<02:24,  4.02s/it]
+Loading safetensors checkpoint shards:   5% Completed | 2/37 [00:08<02:25,  4.16s/it]
+Loading safetensors checkpoint shards:   8% Completed | 3/37 [00:12<02:25,  4.29s/it]
+Loading safetensors checkpoint shards:  11% Completed | 4/37 [00:17<02:32,  4.63s/it]
+Loading safetensors checkpoint shards:  14% Completed | 5/37 [00:22<02:32,  4.76s/it]
+slurmstepd-gpu02: error: *** JOB 305798 ON gpu02 CANCELLED AT 2025-03-29T06:01:31 ***

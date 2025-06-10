@@ -1,0 +1,10 @@
+instruct generation
+tag_evol_tag3_7b_yxprompt
+INFO 03-29 05:51:20 __init__.py:207] Automatically detected platform cuda.
+INFO 03-29 05:51:27 config.py:549] This model supports multiple tasks: {'embed', 'generate', 'reward', 'score', 'classify'}. Defaulting to 'generate'.
+tag_evol_tag5_7b_yxprompt
+INFO 03-29 05:51:32 __init__.py:207] Automatically detected platform cuda.
+INFO 03-29 05:51:38 config.py:549] This model supports multiple tasks: {'classify', 'generate', 'reward', 'score', 'embed'}. Defaulting to 'generate'.
+tag_evol_tag7_7b_yxprompt
+INFO 03-29 05:51:42 __init__.py:207] Automatically detected platform cuda.
+INFO 03-29 05:51:48 config.py:549] This model supports multiple tasks: {'score', 'classify', 'generate', 'reward', 'embed'}. Defaulting to 'generate'.

@@ -1,0 +1,39 @@
+instruct generation
+tag_evol_tag3_7b_yxprompt
+INFO 03-29 06:53:27 __init__.py:207] Automatically detected platform cuda.
+WARNING 03-29 06:53:28 config.py:2448] Casting torch.bfloat16 to torch.float16.
+INFO 03-29 06:53:37 config.py:549] This model supports multiple tasks: {'generate', 'embed', 'classify', 'reward', 'score'}. Defaulting to 'generate'.
+INFO 03-29 06:53:37 config.py:1382] Defaulting to use mp for distributed inference
+INFO 03-29 06:53:37 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='/home/share/models/Qwen2.5-7B-Instruct', speculative_config=None, tokenizer='/home/share/models/Qwen2.5-7B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=2, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/home/share/models/Qwen2.5-7B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+WARNING 03-29 06:53:38 multiproc_worker_utils.py:300] Reducing Torch parallelism from 4 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+INFO 03-29 06:53:38 custom_cache_manager.py:19] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:53:38 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:53:40 cuda.py:229] Using Flash Attention backend.
+INFO 03-29 06:53:40 cuda.py:229] Using Flash Attention backend.
+INFO 03-29 06:53:41 utils.py:916] Found nccl from library libnccl.so.2
+INFO 03-29 06:53:41 pynccl.py:69] vLLM is using nccl==2.21.5
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:53:41 utils.py:916] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:53:41 pynccl.py:69] vLLM is using nccl==2.21.5
+INFO 03-29 06:53:42 custom_all_reduce_utils.py:244] reading GPU P2P access cache from /home/sqshou/.cache/vllm/gpu_p2p_access_cache_for_0,1.json
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:53:42 custom_all_reduce_utils.py:244] reading GPU P2P access cache from /home/sqshou/.cache/vllm/gpu_p2p_access_cache_for_0,1.json
+INFO 03-29 06:53:42 shm_broadcast.py:258] vLLM message queue communication handle: Handle(connect_ip='127.0.0.1', local_reader_ranks=[1], buffer_handle=(1, 4194304, 6, 'psm_fca1eb6d'), local_subscribe_port=52623, remote_subscribe_port=None)
+INFO 03-29 06:53:42 model_runner.py:1110] Starting to load model /home/share/models/Qwen2.5-7B-Instruct...
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:53:42 model_runner.py:1110] Starting to load model /home/share/models/Qwen2.5-7B-Instruct...
+INFO 03-29 06:54:04 model_runner.py:1115] Loading model weights took 7.1216 GB
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:54:04 model_runner.py:1115] Loading model weights took 7.1216 GB
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:54:21 worker.py:267] Memory profiling takes 16.81 seconds
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:54:21 worker.py:267] the current vLLM instance can use total_gpu_memory (79.20GiB) x gpu_memory_utilization (0.90) = 71.28GiB
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:54:21 worker.py:267] model weights take 7.12GiB; non_torch_memory takes 0.46GiB; PyTorch activation peak memory takes 2.86GiB; the rest of the memory reserved for KV Cache is 60.84GiB.
+INFO 03-29 06:54:21 worker.py:267] Memory profiling takes 17.09 seconds
+INFO 03-29 06:54:21 worker.py:267] the current vLLM instance can use total_gpu_memory (79.20GiB) x gpu_memory_utilization (0.90) = 71.28GiB
+INFO 03-29 06:54:21 worker.py:267] model weights take 7.12GiB; non_torch_memory takes 0.46GiB; PyTorch activation peak memory takes 2.86GiB; the rest of the memory reserved for KV Cache is 60.84GiB.
+INFO 03-29 06:54:22 executor_base.py:111] # cuda blocks: 142399, # CPU blocks: 9362
+INFO 03-29 06:54:22 executor_base.py:116] Maximum concurrency for 32768 tokens per request: 69.53x
+INFO 03-29 06:54:29 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:54:29 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-29 06:54:44 custom_all_reduce.py:226] Registering 1995 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:54:45 custom_all_reduce.py:226] Registering 1995 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=1490097)[0;0m INFO 03-29 06:54:45 model_runner.py:1562] Graph capturing finished in 15 secs, took 0.25 GiB
+INFO 03-29 06:54:45 model_runner.py:1562] Graph capturing finished in 16 secs, took 0.25 GiB
+INFO 03-29 06:54:45 llm_engine.py:436] init engine (profile, create kv cache, warmup model) took 40.45 seconds
+./datas/databricks-dolly-15k/databricks-dolly-15k.json.cgtag_datas.json not exsits

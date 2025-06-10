@@ -1,0 +1,35 @@
+{'dataset': 'math-500',
+ 'max_len': 512,
+ 'model': '/home/share/models/Mistral-7B-v0.1',
+ 'num_gpus': 8,
+ 'output_path': './preds_math-500/llama3/base/Mistral-7B-v0.1/Mistral-7B-v0.1',
+ 'temperature': 0.0,
+ 'top_p': 1}
+
+# Q: There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?
+# A: There are 15 trees originally. Then there were 21 trees after some more were planted. So there must have been 21 - 15 = 6. The answer is 6.
+
+# Q: If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?
+# A: There are originally 3 cars. 2 more cars arrive. 3 + 2 = 5. The answer is 5.
+
+# Q: Leah had 32 chocolates and her sister had 42. If they ate 35, how many pieces do they have left in total?
+# A: Originally, Leah had 32 chocolates. Her sister had 42. So in total they had 32 + 42 = 74. After eating 35, they had 74 - 35 = 39. The answer is 39.
+
+# Q: Convert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\theta),$ where $r > 0$ and $0 \le \theta < 2 \pi.$
+Please reason step by step, and put your final answer within \boxed{}.
+# A:
+INFO 03-29 16:50:53 __init__.py:207] Automatically detected platform cuda.
+INFO 03-29 16:51:00 config.py:549] This model supports multiple tasks: {'score', 'generate', 'reward', 'classify', 'embed'}. Defaulting to 'generate'.
+INFO 03-29 16:51:00 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='/home/share/models/Mistral-7B-v0.1', speculative_config=None, tokenizer='/home/share/models/Mistral-7B-v0.1', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/home/share/models/Mistral-7B-v0.1, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-29 16:51:01 cuda.py:229] Using Flash Attention backend.
+INFO 03-29 16:51:02 model_runner.py:1110] Starting to load model /home/share/models/Mistral-7B-v0.1...
+INFO 03-29 16:51:09 model_runner.py:1115] Loading model weights took 13.4967 GB
+INFO 03-29 16:51:11 worker.py:267] Memory profiling takes 1.33 seconds
+INFO 03-29 16:51:11 worker.py:267] the current vLLM instance can use total_gpu_memory (79.15GiB) x gpu_memory_utilization (0.90) = 71.24GiB
+INFO 03-29 16:51:11 worker.py:267] model weights take 13.50GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 0.85GiB; the rest of the memory reserved for KV Cache is 56.80GiB.
+INFO 03-29 16:51:11 executor_base.py:111] # cuda blocks: 29079, # CPU blocks: 2048
+INFO 03-29 16:51:11 executor_base.py:116] Maximum concurrency for 8192 tokens per request: 56.79x
+INFO 03-29 16:51:13 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-29 16:51:29 model_runner.py:1562] Graph capturing finished in 15 secs, took 0.87 GiB
+INFO 03-29 16:51:29 llm_engine.py:436] init engine (profile, create kv cache, warmup model) took 19.50 seconds
+Score: 0.09

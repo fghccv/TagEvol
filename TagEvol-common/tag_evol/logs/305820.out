@@ -1,0 +1,60 @@
+instruct generation
+tag_evol_tag3_7b_yxprompt
+INFO 03-29 06:16:59 __init__.py:207] Automatically detected platform cuda.
+INFO 03-29 06:17:05 config.py:549] This model supports multiple tasks: {'reward', 'generate', 'classify', 'score', 'embed'}. Defaulting to 'generate'.
+INFO 03-29 06:17:05 config.py:1382] Defaulting to use mp for distributed inference
+INFO 03-29 06:17:05 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='/home/share/models/Qwen2.5-72B-Instruct', speculative_config=None, tokenizer='/home/share/models/Qwen2.5-72B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=2, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/home/share/models/Qwen2.5-72B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+WARNING 03-29 06:17:06 multiproc_worker_utils.py:300] Reducing Torch parallelism from 4 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+INFO 03-29 06:17:06 custom_cache_manager.py:19] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m INFO 03-29 06:17:06 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+INFO 03-29 06:17:07 cuda.py:229] Using Flash Attention backend.
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m INFO 03-29 06:17:07 cuda.py:229] Using Flash Attention backend.
+INFO 03-29 06:17:08 utils.py:916] Found nccl from library libnccl.so.2
+INFO 03-29 06:17:08 pynccl.py:69] vLLM is using nccl==2.21.5
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m INFO 03-29 06:17:08 utils.py:916] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m INFO 03-29 06:17:08 pynccl.py:69] vLLM is using nccl==2.21.5
+INFO 03-29 06:17:08 custom_all_reduce_utils.py:244] reading GPU P2P access cache from /home/sqshou/.cache/vllm/gpu_p2p_access_cache_for_0,1.json
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m INFO 03-29 06:17:08 custom_all_reduce_utils.py:244] reading GPU P2P access cache from /home/sqshou/.cache/vllm/gpu_p2p_access_cache_for_0,1.json
+INFO 03-29 06:17:08 shm_broadcast.py:258] vLLM message queue communication handle: Handle(connect_ip='127.0.0.1', local_reader_ranks=[1], buffer_handle=(1, 4194304, 6, 'psm_cccf3e0f'), local_subscribe_port=34383, remote_subscribe_port=None)
+INFO 03-29 06:17:08 model_runner.py:1110] Starting to load model /home/share/models/Qwen2.5-72B-Instruct...
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m INFO 03-29 06:17:08 model_runner.py:1110] Starting to load model /home/share/models/Qwen2.5-72B-Instruct...
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m INFO 03-29 06:19:10 model_runner.py:1115] Loading model weights took 67.8002 GB
+INFO 03-29 06:19:10 model_runner.py:1115] Loading model weights took 67.8002 GB
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m INFO 03-29 06:19:39 worker.py:267] Memory profiling takes 28.54 seconds
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m INFO 03-29 06:19:39 worker.py:267] the current vLLM instance can use total_gpu_memory (79.20GiB) x gpu_memory_utilization (0.90) = 71.28GiB
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m INFO 03-29 06:19:39 worker.py:267] model weights take 67.80GiB; non_torch_memory takes 0.45GiB; PyTorch activation peak memory takes 5.24GiB; the rest of the memory reserved for KV Cache is -2.21GiB.
+INFO 03-29 06:19:39 worker.py:267] Memory profiling takes 28.74 seconds
+INFO 03-29 06:19:39 worker.py:267] the current vLLM instance can use total_gpu_memory (79.20GiB) x gpu_memory_utilization (0.90) = 71.28GiB
+INFO 03-29 06:19:39 worker.py:267] model weights take 67.80GiB; non_torch_memory takes 0.46GiB; PyTorch activation peak memory takes 5.24GiB; the rest of the memory reserved for KV Cache is -2.22GiB.
+INFO 03-29 06:19:39 executor_base.py:111] # cuda blocks: 0, # CPU blocks: 1638
+INFO 03-29 06:19:39 executor_base.py:116] Maximum concurrency for 32768 tokens per request: 0.00x
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242] Exception in worker VllmWorkerProcess while processing method initialize_cache.
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242] Traceback (most recent call last):
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242]   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 236, in _run_worker_process
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242]     output = run_method(worker, method, args, kwargs)
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242]   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 2196, in run_method
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242]     return func(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242]   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker.py", line 291, in initialize_cache
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242]     raise_if_cache_size_invalid(num_gpu_blocks,
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242]   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker.py", line 539, in raise_if_cache_size_invalid
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242]     raise ValueError("No available memory for the cache blocks. "
+[1;36m(VllmWorkerProcess pid=3791517)[0;0m ERROR 03-29 06:19:39 multiproc_worker_utils.py:242] ValueError: No available memory for the cache blocks. Try increasing `gpu_memory_utilization` when initializing the engine.
+tag_evol_tag5_7b_yxprompt
+INFO 03-29 06:19:50 __init__.py:207] Automatically detected platform cuda.
+INFO 03-29 06:19:57 config.py:549] This model supports multiple tasks: {'generate', 'reward', 'embed', 'score', 'classify'}. Defaulting to 'generate'.
+INFO 03-29 06:19:57 config.py:1382] Defaulting to use mp for distributed inference
+INFO 03-29 06:19:57 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='/home/share/models/Qwen2.5-72B-Instruct', speculative_config=None, tokenizer='/home/share/models/Qwen2.5-72B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=2, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/home/share/models/Qwen2.5-72B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+WARNING 03-29 06:19:58 multiproc_worker_utils.py:300] Reducing Torch parallelism from 4 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+INFO 03-29 06:19:58 custom_cache_manager.py:19] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+[1;36m(VllmWorkerProcess pid=3791860)[0;0m INFO 03-29 06:19:58 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=3791860)[0;0m INFO 03-29 06:19:59 cuda.py:229] Using Flash Attention backend.
+INFO 03-29 06:19:59 cuda.py:229] Using Flash Attention backend.
+[1;36m(VllmWorkerProcess pid=3791860)[0;0m INFO 03-29 06:19:59 utils.py:916] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=3791860)[0;0m INFO 03-29 06:19:59 pynccl.py:69] vLLM is using nccl==2.21.5
+INFO 03-29 06:19:59 utils.py:916] Found nccl from library libnccl.so.2
+INFO 03-29 06:19:59 pynccl.py:69] vLLM is using nccl==2.21.5
+INFO 03-29 06:20:00 custom_all_reduce_utils.py:244] reading GPU P2P access cache from /home/sqshou/.cache/vllm/gpu_p2p_access_cache_for_0,1.json
+[1;36m(VllmWorkerProcess pid=3791860)[0;0m INFO 03-29 06:20:00 custom_all_reduce_utils.py:244] reading GPU P2P access cache from /home/sqshou/.cache/vllm/gpu_p2p_access_cache_for_0,1.json
+INFO 03-29 06:20:00 shm_broadcast.py:258] vLLM message queue communication handle: Handle(connect_ip='127.0.0.1', local_reader_ranks=[1], buffer_handle=(1, 4194304, 6, 'psm_b7f26283'), local_subscribe_port=60431, remote_subscribe_port=None)
+INFO 03-29 06:20:00 model_runner.py:1110] Starting to load model /home/share/models/Qwen2.5-72B-Instruct...
+[1;36m(VllmWorkerProcess pid=3791860)[0;0m INFO 03-29 06:20:00 model_runner.py:1110] Starting to load model /home/share/models/Qwen2.5-72B-Instruct...

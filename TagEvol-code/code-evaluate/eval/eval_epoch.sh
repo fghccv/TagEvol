@@ -5,8 +5,9 @@ export VLLM_WORKER_MULTIPROC_METHOD=spawn
 model=$1
 method=$2
 base_model=$3
-model_path=../../$method/models/$base_model/$1
-checkpoints=($(ls -d ${model_path}/*/ | grep -v 'runs'))
+# model_path=../../$method/models/$base_model/$1
+# checkpoints=($(ls -d ${model_path}/*/ | grep -v 'runs'))
+checkpoints=($model)
 datasets=("humaneval" "mbpp")
 
 # 模型参数
@@ -35,9 +36,9 @@ do
         mkdir -p ${output_path}
         echo 'Output path: '$output_path
         echo 'Model to eval: '$checkpoint
-        python generate.py --model ${checkpoint} --dataset ${dataset} --temperature ${temp} \
+        python3 generate.py --model ${checkpoint} --dataset ${dataset} --temperature ${temp} \
             --num_seqs_per_iter ${num_seqs_per_iter} --N ${pred_num} --max_len ${max_len} --output_path ${output_path} --num_gpus 8
-        python process.py --path ${output_path} --out_path ${output_path}.jsonl --dataset ${dataset}
-        python evalute.py --path ${output_path}.jsonl --dataset ${dataset} --N 1 | tee ${output_path}_pass@k.txt
+        python3 process.py --path ${output_path} --out_path ${output_path}.jsonl --dataset ${dataset}
+        python3 evalute.py --path ${output_path}.jsonl --dataset ${dataset} --N 1 | tee ${output_path}_pass@k.txt
     done
 done

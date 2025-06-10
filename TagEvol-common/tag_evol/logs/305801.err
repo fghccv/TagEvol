@@ -1,0 +1,118 @@
+INFO:__main__:Initializing LLM engine...
+Loading safetensors checkpoint shards:   0% Completed | 0/37 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:   3% Completed | 1/37 [00:04<02:32,  4.23s/it]
+Loading safetensors checkpoint shards:   5% Completed | 2/37 [00:06<01:38,  2.82s/it]
+Loading safetensors checkpoint shards:   8% Completed | 3/37 [00:07<01:13,  2.15s/it]
+Loading safetensors checkpoint shards:  11% Completed | 4/37 [00:08<01:01,  1.86s/it]
+Loading safetensors checkpoint shards:  14% Completed | 5/37 [00:10<00:53,  1.67s/it]
+Loading safetensors checkpoint shards:  16% Completed | 6/37 [00:13<01:10,  2.26s/it]
+Loading safetensors checkpoint shards:  19% Completed | 7/37 [00:17<01:28,  2.94s/it]
+Loading safetensors checkpoint shards:  22% Completed | 8/37 [00:21<01:32,  3.18s/it]
+Loading safetensors checkpoint shards:  24% Completed | 9/37 [00:26<01:46,  3.82s/it]
+Loading safetensors checkpoint shards:  27% Completed | 10/37 [00:31<01:54,  4.23s/it]
+Loading safetensors checkpoint shards:  30% Completed | 11/37 [00:36<01:56,  4.47s/it]
+Loading safetensors checkpoint shards:  32% Completed | 12/37 [00:42<01:56,  4.65s/it]
+Loading safetensors checkpoint shards:  35% Completed | 13/37 [00:46<01:53,  4.73s/it]
+Loading safetensors checkpoint shards:  38% Completed | 14/37 [00:52<01:51,  4.83s/it]
+Loading safetensors checkpoint shards:  41% Completed | 15/37 [00:57<01:47,  4.89s/it]
+Loading safetensors checkpoint shards:  43% Completed | 16/37 [01:01<01:42,  4.88s/it]
+Loading safetensors checkpoint shards:  46% Completed | 17/37 [01:06<01:38,  4.90s/it]
+Loading safetensors checkpoint shards:  49% Completed | 18/37 [01:11<01:33,  4.93s/it]
+Loading safetensors checkpoint shards:  51% Completed | 19/37 [01:16<01:28,  4.92s/it]
+Loading safetensors checkpoint shards:  54% Completed | 20/37 [01:21<01:23,  4.92s/it]
+Loading safetensors checkpoint shards:  57% Completed | 21/37 [01:25<01:14,  4.68s/it]
+Loading safetensors checkpoint shards:  59% Completed | 22/37 [01:30<01:11,  4.77s/it]
+Loading safetensors checkpoint shards:  62% Completed | 23/37 [01:34<01:03,  4.54s/it]
+Loading safetensors checkpoint shards:  65% Completed | 24/37 [01:36<00:46,  3.61s/it]
+Loading safetensors checkpoint shards:  68% Completed | 25/37 [01:37<00:35,  2.98s/it]
+Loading safetensors checkpoint shards:  70% Completed | 26/37 [01:39<00:27,  2.54s/it]
+Loading safetensors checkpoint shards:  73% Completed | 27/37 [01:41<00:23,  2.33s/it]
+Loading safetensors checkpoint shards:  76% Completed | 28/37 [01:46<00:28,  3.11s/it]
+Loading safetensors checkpoint shards:  78% Completed | 29/37 [01:50<00:29,  3.65s/it]
+Loading safetensors checkpoint shards:  81% Completed | 30/37 [01:55<00:28,  4.06s/it]
+Loading safetensors checkpoint shards:  84% Completed | 31/37 [02:00<00:26,  4.34s/it]
+Loading safetensors checkpoint shards:  86% Completed | 32/37 [02:05<00:22,  4.49s/it]
+Loading safetensors checkpoint shards:  89% Completed | 33/37 [02:10<00:18,  4.70s/it]
+Loading safetensors checkpoint shards:  92% Completed | 34/37 [02:15<00:14,  4.73s/it]
+Loading safetensors checkpoint shards:  95% Completed | 35/37 [02:20<00:09,  4.81s/it]
+Loading safetensors checkpoint shards:  97% Completed | 36/37 [02:25<00:04,  4.80s/it]
+Loading safetensors checkpoint shards: 100% Completed | 37/37 [02:30<00:00,  4.82s/it]
+Loading safetensors checkpoint shards: 100% Completed | 37/37 [02:30<00:00,  4.07s/it]
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 241, in <module>
+[rank0]:     main(args.model_name_or_path, args.source_file, args.target_file, args.temperature, args.max_tokens, args.debug, args.tp, args.num_pool, args.tag_file, args.num_tag)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 193, in main
+[rank0]:     engine = TagReduce(model_name_or_path, tensor_parallel_size=tp)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 30, in __init__
+[rank0]:     self.llm_engine = self.create_llm_engine(model_name_or_path)
+[rank0]:   File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 34, in create_llm_engine
+[rank0]:     return LLM(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 1022, in inner
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+[rank0]:     self.llm_engine = self.engine_class.from_engine_args(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 489, in from_engine_args
+[rank0]:     engine = cls(
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 276, in __init__
+[rank0]:     self._initialize_kv_caches()
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 434, in _initialize_kv_caches
+[rank0]:     self.model_executor.initialize_cache(num_gpu_blocks, num_cpu_blocks)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 122, in initialize_cache
+[rank0]:     self.collective_rpc("initialize_cache",
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 316, in collective_rpc
+[rank0]:     return self._run_workers(method, *args, **(kwargs or {}))
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 185, in _run_workers
+[rank0]:     driver_worker_output = run_method(self.driver_worker, sent_method,
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 2196, in run_method
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker.py", line 291, in initialize_cache
+[rank0]:     raise_if_cache_size_invalid(num_gpu_blocks,
+[rank0]:   File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker.py", line 539, in raise_if_cache_size_invalid
+[rank0]:     raise ValueError("No available memory for the cache blocks. "
+[rank0]: ValueError: No available memory for the cache blocks. Try increasing `gpu_memory_utilization` when initializing the engine.
+[rank0]:[W329 06:04:55.600284920 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+/home/sqshou/anaconda3/envs/thm/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+INFO:__main__:Initializing LLM engine...
+Loading safetensors checkpoint shards:   0% Completed | 0/37 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:   3% Completed | 1/37 [00:05<03:03,  5.10s/it]
+Loading safetensors checkpoint shards:   5% Completed | 2/37 [00:07<01:54,  3.27s/it]
+Loading safetensors checkpoint shards:   8% Completed | 3/37 [00:08<01:21,  2.41s/it]
+Loading safetensors checkpoint shards:  11% Completed | 4/37 [00:09<01:06,  2.01s/it]
+Loading safetensors checkpoint shards:  14% Completed | 5/37 [00:11<00:56,  1.77s/it]
+Loading safetensors checkpoint shards:  16% Completed | 6/37 [00:15<01:17,  2.51s/it]
+Loading safetensors checkpoint shards:  19% Completed | 7/37 [00:20<01:41,  3.38s/it]
+Loading safetensors checkpoint shards:  22% Completed | 8/37 [00:24<01:48,  3.73s/it]
+Loading safetensors checkpoint shards:  24% Completed | 9/37 [00:30<01:57,  4.20s/it]
+Loading safetensors checkpoint shards:  27% Completed | 10/37 [00:35<01:59,  4.44s/it]
+Loading safetensors checkpoint shards:  30% Completed | 11/37 [00:40<02:00,  4.62s/it]
+Loading safetensors checkpoint shards:  32% Completed | 12/37 [00:45<01:59,  4.76s/it]
+Loading safetensors checkpoint shards:  35% Completed | 13/37 [00:50<01:55,  4.82s/it]
+Loading safetensors checkpoint shards:  38% Completed | 14/37 [00:55<01:53,  4.93s/it]
+Loading safetensors checkpoint shards:  41% Completed | 15/37 [01:00<01:49,  4.98s/it]
+Loading safetensors checkpoint shards:  43% Completed | 16/37 [01:05<01:44,  4.97s/it]
+Loading safetensors checkpoint shards:  46% Completed | 17/37 [01:10<01:39,  4.99s/it]
+Loading safetensors checkpoint shards:  49% Completed | 18/37 [01:15<01:35,  5.01s/it]
+Loading safetensors checkpoint shards:  51% Completed | 19/37 [01:20<01:29,  4.98s/it]
+Loading safetensors checkpoint shards:  54% Completed | 20/37 [01:25<01:24,  5.00s/it]
+Loading safetensors checkpoint shards:  57% Completed | 21/37 [01:29<01:15,  4.75s/it]
+Loading safetensors checkpoint shards:  59% Completed | 22/37 [01:34<01:12,  4.86s/it]
+Loading safetensors checkpoint shards:  62% Completed | 23/37 [01:38<01:04,  4.61s/it]
+Loading safetensors checkpoint shards:  65% Completed | 24/37 [01:40<00:47,  3.66s/it]
+Loading safetensors checkpoint shards:  68% Completed | 25/37 [01:41<00:36,  3.02s/it]
+Loading safetensors checkpoint shards:  70% Completed | 26/37 [01:43<00:28,  2.56s/it]
+Loading safetensors checkpoint shards:  73% Completed | 27/37 [01:45<00:23,  2.35s/it]
+Loading safetensors checkpoint shards:  76% Completed | 28/37 [01:50<00:28,  3.15s/it]
+Loading safetensors checkpoint shards:  78% Completed | 29/37 [01:55<00:29,  3.72s/it]
+Loading safetensors checkpoint shards:  81% Completed | 30/37 [02:00<00:28,  4.14s/it]
+Loading safetensors checkpoint shards:  84% Completed | 31/37 [02:05<00:26,  4.42s/it]
+Loading safetensors checkpoint shards:  86% Completed | 32/37 [02:10<00:22,  4.59s/it]
+Loading safetensors checkpoint shards:  89% Completed | 33/37 [02:15<00:19,  4.80s/it]
+Loading safetensors checkpoint shards:  92% Completed | 34/37 [02:20<00:14,  4.86s/it]
+Loading safetensors checkpoint shards:  95% Completed | 35/37 [02:25<00:09,  4.92s/it]
+Loading safetensors checkpoint shards:  97% Completed | 36/37 [02:30<00:04,  4.92s/it]
+Loading safetensors checkpoint shards: 100% Completed | 37/37 [02:35<00:00,  4.93s/it]
+Loading safetensors checkpoint shards: 100% Completed | 37/37 [02:35<00:00,  4.20s/it]
+
+slurmstepd-gpu02: error: *** JOB 305801 ON gpu02 CANCELLED AT 2025-03-29T06:07:47 ***

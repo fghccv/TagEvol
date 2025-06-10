@@ -1,0 +1,97 @@
+instruct generation
+tag_evol_tag3_7b_yxprompt
+INFO 03-29 14:22:09 __init__.py:207] Automatically detected platform cuda.
+INFO 03-29 14:22:20 config.py:549] This model supports multiple tasks: {'score', 'generate', 'reward', 'classify', 'embed'}. Defaulting to 'generate'.
+INFO 03-29 14:22:21 config.py:1382] Defaulting to use mp for distributed inference
+INFO 03-29 14:22:21 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='/home/share/models/Qwen2.5-72B-Instruct', speculative_config=None, tokenizer='/home/share/models/Qwen2.5-72B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=8, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/home/share/models/Qwen2.5-72B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+WARNING 03-29 14:22:21 multiproc_worker_utils.py:300] Reducing Torch parallelism from 16 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+INFO 03-29 14:22:21 custom_cache_manager.py:19] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+[1;36m(VllmWorkerProcess pid=2891896)[0;0m INFO 03-29 14:22:21 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2891897)[0;0m INFO 03-29 14:22:21 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2891898)[0;0m INFO 03-29 14:22:21 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2891899)[0;0m INFO 03-29 14:22:21 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2891900)[0;0m INFO 03-29 14:22:21 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2891901)[0;0m INFO 03-29 14:22:21 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2891902)[0;0m INFO 03-29 14:22:21 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+INFO 03-29 14:22:24 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 03-29 14:22:24 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2891898)[0;0m INFO 03-29 14:22:24 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2891898)[0;0m INFO 03-29 14:22:24 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2891901)[0;0m INFO 03-29 14:22:24 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2891901)[0;0m INFO 03-29 14:22:24 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2891902)[0;0m INFO 03-29 14:22:24 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2891902)[0;0m INFO 03-29 14:22:24 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2891897)[0;0m INFO 03-29 14:22:24 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2891896)[0;0m INFO 03-29 14:22:24 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2891897)[0;0m INFO 03-29 14:22:24 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2891900)[0;0m INFO 03-29 14:22:24 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2891899)[0;0m INFO 03-29 14:22:24 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2891896)[0;0m INFO 03-29 14:22:24 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2891899)[0;0m INFO 03-29 14:22:24 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2891900)[0;0m INFO 03-29 14:22:24 cuda.py:226] Using XFormers backend.
+ERROR 03-29 14:22:25 multiproc_worker_utils.py:124] Worker VllmWorkerProcess pid 2891898 died, exit code: -15
+INFO 03-29 14:22:25 multiproc_worker_utils.py:128] Killing local vLLM worker processes
+tag_evol_tag5_7b_yxprompt
+INFO 03-29 14:22:31 __init__.py:207] Automatically detected platform cuda.
+INFO 03-29 14:22:39 config.py:549] This model supports multiple tasks: {'generate', 'score', 'reward', 'embed', 'classify'}. Defaulting to 'generate'.
+INFO 03-29 14:22:39 config.py:1382] Defaulting to use mp for distributed inference
+INFO 03-29 14:22:39 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='/home/share/models/Qwen2.5-72B-Instruct', speculative_config=None, tokenizer='/home/share/models/Qwen2.5-72B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=8, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/home/share/models/Qwen2.5-72B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+WARNING 03-29 14:22:40 multiproc_worker_utils.py:300] Reducing Torch parallelism from 16 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+INFO 03-29 14:22:40 custom_cache_manager.py:19] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+[1;36m(VllmWorkerProcess pid=2892091)[0;0m INFO 03-29 14:22:40 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892092)[0;0m INFO 03-29 14:22:40 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892093)[0;0m INFO 03-29 14:22:40 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892094)[0;0m INFO 03-29 14:22:40 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892095)[0;0m INFO 03-29 14:22:40 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892096)[0;0m INFO 03-29 14:22:40 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892097)[0;0m INFO 03-29 14:22:40 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892092)[0;0m INFO 03-29 14:22:42 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892092)[0;0m INFO 03-29 14:22:42 cuda.py:226] Using XFormers backend.
+INFO 03-29 14:22:42 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 03-29 14:22:42 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892093)[0;0m INFO 03-29 14:22:42 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892093)[0;0m INFO 03-29 14:22:42 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892091)[0;0m INFO 03-29 14:22:42 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892091)[0;0m INFO 03-29 14:22:42 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892094)[0;0m INFO 03-29 14:22:42 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892094)[0;0m INFO 03-29 14:22:42 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892097)[0;0m INFO 03-29 14:22:42 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892097)[0;0m INFO 03-29 14:22:42 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892096)[0;0m INFO 03-29 14:22:42 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892096)[0;0m INFO 03-29 14:22:42 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892095)[0;0m INFO 03-29 14:22:42 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892095)[0;0m INFO 03-29 14:22:42 cuda.py:226] Using XFormers backend.
+ERROR 03-29 14:22:43 multiproc_worker_utils.py:124] Worker VllmWorkerProcess pid 2892092 died, exit code: -15
+INFO 03-29 14:22:43 multiproc_worker_utils.py:128] Killing local vLLM worker processes
+tag_evol_tag7_7b_yxprompt
+INFO 03-29 14:22:49 __init__.py:207] Automatically detected platform cuda.
+INFO 03-29 14:22:57 config.py:549] This model supports multiple tasks: {'classify', 'reward', 'score', 'generate', 'embed'}. Defaulting to 'generate'.
+INFO 03-29 14:22:57 config.py:1382] Defaulting to use mp for distributed inference
+INFO 03-29 14:22:57 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='/home/share/models/Qwen2.5-72B-Instruct', speculative_config=None, tokenizer='/home/share/models/Qwen2.5-72B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=8, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=/home/share/models/Qwen2.5-72B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+WARNING 03-29 14:22:58 multiproc_worker_utils.py:300] Reducing Torch parallelism from 16 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+INFO 03-29 14:22:58 custom_cache_manager.py:19] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+[1;36m(VllmWorkerProcess pid=2892275)[0;0m INFO 03-29 14:22:58 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892276)[0;0m INFO 03-29 14:22:58 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892277)[0;0m INFO 03-29 14:22:58 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892278)[0;0m INFO 03-29 14:22:58 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892279)[0;0m INFO 03-29 14:22:58 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892280)[0;0m INFO 03-29 14:22:58 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892281)[0;0m INFO 03-29 14:22:58 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2892277)[0;0m INFO 03-29 14:23:00 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892277)[0;0m INFO 03-29 14:23:00 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892280)[0;0m INFO 03-29 14:23:00 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892280)[0;0m INFO 03-29 14:23:00 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892278)[0;0m INFO 03-29 14:23:00 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892278)[0;0m INFO 03-29 14:23:00 cuda.py:226] Using XFormers backend.
+INFO 03-29 14:23:00 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 03-29 14:23:00 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892276)[0;0m INFO 03-29 14:23:00 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892276)[0;0m INFO 03-29 14:23:00 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892279)[0;0m INFO 03-29 14:23:00 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892279)[0;0m INFO 03-29 14:23:00 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892281)[0;0m INFO 03-29 14:23:00 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892281)[0;0m INFO 03-29 14:23:00 cuda.py:226] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=2892275)[0;0m INFO 03-29 14:23:00 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=2892275)[0;0m INFO 03-29 14:23:00 cuda.py:226] Using XFormers backend.
+ERROR 03-29 14:23:00 multiproc_worker_utils.py:124] Worker VllmWorkerProcess pid 2892280 died, exit code: -15
+INFO 03-29 14:23:00 multiproc_worker_utils.py:128] Killing local vLLM worker processes

@@ -1,0 +1,99 @@
+INFO:__main__:Initializing LLM engine...
+Traceback (most recent call last):
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 241, in <module>
+    main(args.model_name_or_path, args.source_file, args.target_file, args.temperature, args.max_tokens, args.debug, args.tp, args.num_pool, args.tag_file, args.num_tag)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 193, in main
+    engine = TagReduce(model_name_or_path, tensor_parallel_size=tp)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 30, in __init__
+    self.llm_engine = self.create_llm_engine(model_name_or_path)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 34, in create_llm_engine
+    return LLM(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 1022, in inner
+    return fn(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+    self.llm_engine = self.engine_class.from_engine_args(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 489, in from_engine_args
+    engine = cls(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 273, in __init__
+    self.model_executor = executor_class(vllm_config=vllm_config, )
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 271, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 52, in __init__
+    self._init_executor()
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 124, in _init_executor
+    self._run_workers("init_device")
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 185, in _run_workers
+    driver_worker_output = run_method(self.driver_worker, sent_method,
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 2196, in run_method
+    return func(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker.py", line 157, in init_device
+    _check_if_gpu_supports_dtype(self.model_config.dtype)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker.py", line 525, in _check_if_gpu_supports_dtype
+    raise ValueError(
+ValueError: Bfloat16 is only supported on GPUs with compute capability of at least 8.0. Your Tesla V100S-PCIE-32GB GPU has compute capability 7.0. You can use float16 instead by explicitly setting the`dtype` flag in CLI, for example: --dtype=half.
+INFO:__main__:Initializing LLM engine...
+Traceback (most recent call last):
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 241, in <module>
+    main(args.model_name_or_path, args.source_file, args.target_file, args.temperature, args.max_tokens, args.debug, args.tp, args.num_pool, args.tag_file, args.num_tag)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 193, in main
+    engine = TagReduce(model_name_or_path, tensor_parallel_size=tp)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 30, in __init__
+    self.llm_engine = self.create_llm_engine(model_name_or_path)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 34, in create_llm_engine
+    return LLM(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 1022, in inner
+    return fn(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+    self.llm_engine = self.engine_class.from_engine_args(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 489, in from_engine_args
+    engine = cls(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 273, in __init__
+    self.model_executor = executor_class(vllm_config=vllm_config, )
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 271, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 52, in __init__
+    self._init_executor()
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 124, in _init_executor
+    self._run_workers("init_device")
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 185, in _run_workers
+    driver_worker_output = run_method(self.driver_worker, sent_method,
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 2196, in run_method
+    return func(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker.py", line 157, in init_device
+    _check_if_gpu_supports_dtype(self.model_config.dtype)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker.py", line 525, in _check_if_gpu_supports_dtype
+    raise ValueError(
+ValueError: Bfloat16 is only supported on GPUs with compute capability of at least 8.0. Your Tesla V100S-PCIE-32GB GPU has compute capability 7.0. You can use float16 instead by explicitly setting the`dtype` flag in CLI, for example: --dtype=half.
+INFO:__main__:Initializing LLM engine...
+Traceback (most recent call last):
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 241, in <module>
+    main(args.model_name_or_path, args.source_file, args.target_file, args.temperature, args.max_tokens, args.debug, args.tp, args.num_pool, args.tag_file, args.num_tag)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 193, in main
+    engine = TagReduce(model_name_or_path, tensor_parallel_size=tp)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 30, in __init__
+    self.llm_engine = self.create_llm_engine(model_name_or_path)
+  File "/home/sqshou/workspace/TagEvol/TagEvol-common/tag_reduce_new/tag_evol_multitag_20mul3up_all_tags.py", line 34, in create_llm_engine
+    return LLM(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 1022, in inner
+    return fn(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+    self.llm_engine = self.engine_class.from_engine_args(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 489, in from_engine_args
+    engine = cls(
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 273, in __init__
+    self.model_executor = executor_class(vllm_config=vllm_config, )
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 271, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 52, in __init__
+    self._init_executor()
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 124, in _init_executor
+    self._run_workers("init_device")
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/executor/mp_distributed_executor.py", line 185, in _run_workers
+    driver_worker_output = run_method(self.driver_worker, sent_method,
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/utils.py", line 2196, in run_method
+    return func(*args, **kwargs)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker.py", line 157, in init_device
+    _check_if_gpu_supports_dtype(self.model_config.dtype)
+  File "/home/sqshou/anaconda3/envs/thm/lib/python3.10/site-packages/vllm/worker/worker.py", line 525, in _check_if_gpu_supports_dtype
+    raise ValueError(
+ValueError: Bfloat16 is only supported on GPUs with compute capability of at least 8.0. Your Tesla V100S-PCIE-32GB GPU has compute capability 7.0. You can use float16 instead by explicitly setting the`dtype` flag in CLI, for example: --dtype=half.
